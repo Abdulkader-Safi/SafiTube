@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SafiTube from "../img/logo.png";
+import { Link } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 // import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
@@ -87,10 +88,12 @@ const Menu = ({ darkMode, setDarkMode }) => {
     <Container>
       <Wrapper>
         {/* SafiTube Logo */}
-        <Logo>
-          <Img src={SafiTube} />
-          SafiTube
-        </Logo>
+        <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+          <Logo>
+            <Img src={SafiTube} />
+            SafiTube
+          </Logo>
+        </Link>
         {/* Home */}
         <Item>
           <HomeIcon />
@@ -179,7 +182,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
         {/* Theme Changer */}
         <Item onClick={() => setDarkMode(!darkMode)}>
           <SettingsBrightnessOutlined />
-          Light Mode
+          {darkMode ? "Light Theme" : "Dark Theme"}
         </Item>
       </Wrapper>
     </Container>

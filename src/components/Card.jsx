@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import safiTubeDefault from "../img/safiTubeDefault.jpg";
 import profileImage from "../img/profileImage.jpg";
 
@@ -49,17 +50,19 @@ const Info = styled.div`
 
 function Card() {
   return (
-    <Container>
-      <Imgae src={safiTubeDefault} />
-      <Details>
-        <ChannelImage src={profileImage} />
-        <Text>
-          <Title>Video Title</Title>
-          <ChannelName>Abdulkader Safi</ChannelName>
-          <Info>660K views - 1 day ago</Info>
-        </Text>
-      </Details>
-    </Container>
+    <Link to="/video/test" style={{ textDecoration: "none" }}>
+      <Container>
+        <Imgae src={safiTubeDefault} />
+        <Details>
+          <ChannelImage src={profileImage} />
+          <Text>
+            <Title>Video Title</Title>
+            <ChannelName>Abdulkader Safi</ChannelName>
+            <Info>660K views - 1 day ago</Info>
+          </Text>
+        </Details>
+      </Container>
+    </Link>
   );
 }
 
