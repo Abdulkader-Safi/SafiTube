@@ -25,7 +25,7 @@ const Container = styled.div`
   background-color: ${({ theme }) => theme.bgLighter};
   height: 100vh;
   color: ${({ theme }) => theme.text};
-  font-size: 15px;
+  font-size: 14px;
   position: sticky;
   top: 0;
 `;
@@ -36,9 +36,8 @@ const Wrapper = styled.div`
 
 const Logo = styled.div`
   display: flex;
-  margin-left: 10px;
   align-items: center;
-  gap: 14px;
+  gap: 5px;
   font-weight: bold;
   margin-bottom: 25px;
 `;
@@ -47,17 +46,21 @@ const Img = styled.img`
   height: 25px;
 `;
 
-const Hr = styled.hr`
-  margin: 15px 0px;
-  border: 0.5px solid ${({ theme }) => theme.soft};
-`;
-
 const Item = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
-  margin: 10px;
   cursor: pointer;
+  padding: 7.5px 0px;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.soft};
+  }
+`;
+
+const Hr = styled.hr`
+  margin: 15px 0px;
+  border: 0.5px solid ${({ theme }) => theme.soft};
 `;
 
 const Login = styled.div``;
@@ -79,7 +82,7 @@ const Button = styled.button`
 const Title = styled.h2`
   font-size: 14px;
   font-weight: 500;
-  color: ${({ theme }) => theme.textSoft};
+  color: #aaaaaa;
   margin-bottom: 20px;
 `;
 
@@ -124,12 +127,12 @@ const Menu = ({ darkMode, setDarkMode }) => {
         {/* SIGN IN */}
         <Login>
           Sign in to like videos, comment, and subscribe.
-          {/* <Link to="signin" style={{ textDecoration: "none" }}> */}
-          <Button>
-            <AccountCircleOutlinedIcon />
-            SIGN IN
-          </Button>
-          {/* </Link> */}
+          <Link to="signin" style={{ textDecoration: "none" }}>
+            <Button>
+              <AccountCircleOutlinedIcon />
+              SIGN IN
+            </Button>
+          </Link>
         </Login>
         <Hr />
         <Title>BEST OF SafiTube</Title>

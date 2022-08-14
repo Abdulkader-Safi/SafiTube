@@ -55,7 +55,7 @@ const Info = styled.div`
 
 const Card = ({ type }) => {
   return (
-    <Link to="/video/test" style={{ textDecoration: "none" }}>
+    <Link to="/video" style={{ textDecoration: "none" }}>
       <Container type={type}>
         <Image type={type} src={safiTubeDefault} />
         <Details type={type}>
