@@ -1,13 +1,14 @@
+import React from "react";
+import styled from "styled-components";
+import Comments from "../components/Comments";
+import Card from "../components/Card";
+import profileImage from "../img/profileImage.jpg";
 import {
   AddTaskOutlined,
   ReplyOutlined,
   ThumbDownAltOutlined,
   ThumbUpOutlined,
 } from "@mui/icons-material";
-import React from "react";
-import styled from "styled-components";
-import Comments from "../components/Comments";
-import profileImage from "../img/profileImage.jpg";
 
 const Container = styled.div`
   display: flex;
@@ -118,9 +119,9 @@ function Video() {
             height="720"
             src="https://www.youtube.com/embed/3EjtHs_lXnk"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </VideoWrapper>
         <Title>$5 MILLION AI for FREE</Title>
@@ -165,7 +166,31 @@ function Video() {
         <Hr />
         <Comments />
       </Content>
-      <Recommendation>Recommendation</Recommendation>
+      <Recommendation>
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+      </Recommendation>
     </Container>
   );
 }

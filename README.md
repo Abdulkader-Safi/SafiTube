@@ -2,4 +2,8 @@
 
 Youtube clone created using ReactJS
 
-![Getting Started](./SafiTube_ScreenShot.png)
+SafiTube Home Page
+![SafiTubeHomePage](./SafiTubeHomePage.png)
+
+SafiTube Vedio Comments and Recommendation
+![SafiTubeVedioCommentsandRecommendation](./SafiTubeVedioCommentsandRecommendation.png)

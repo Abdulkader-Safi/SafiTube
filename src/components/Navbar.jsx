@@ -53,7 +53,7 @@ const Button = styled.button`
   gap: 5px;
 `;
 
-function Navbar() {
+const Navbar = () => {
   return (
     <Container>
       <Wrapper>
@@ -68,6 +68,6 @@ function Navbar() {
       </Wrapper>
     </Container>
   );
-}
+};
 
 export default Navbar;
