@@ -1,6 +1,7 @@
 # SafiTube
 
 Youtube clone created using ReactJS
+Project does not have resposive design (first time use styled-components)
 
 SafiTube Home Page
 
